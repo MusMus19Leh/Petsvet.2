@@ -1,15 +1,10 @@
 # 🐾 Sistema de Clínica Veterinária
 
 ## 👥 Identificação
+**Disciplina:** Projeto de Banco de Dados
 
-**Integrantes:**
-
-* Nome do integrante 1
-* Nome do integrante 2
-* Nome do integrante 3
-
-**Disciplina:** Nome da disciplina
-**Professor:** Nome do professor
+**Professor:** Anderson S.Costa
+**Aluno(a):** Leticia O.S Leandro
 
 ---
 
@@ -221,6 +216,19 @@ Este projeto foi desenvolvido com o objetivo de colocar em prática os conhecime
 * Operações CRUD;
 * Integração entre aplicação e banco de dados;
 * Organização e versionamento do projeto no GitHub.
+
+---
+## 🐶Telas Do CRUD
+CLIENTE
+<img width="1046" height="682" alt="Captura de Tela (1)" src="https://github.com/user-attachments/assets/1e9f3e1a-8fc1-4a0f-a5c6-27f946c7a586" />
+
+---
+Pets
+<img width="1046" height="686" alt="Captura de Tela (2)" src="https://github.com/user-attachments/assets/f36c00b0-0203-4f0f-8e98-e73bc096a192" />
+
+---
+Consultas
+<img width="1051" height="687" alt="Captura de Tela (3)" src="https://github.com/user-attachments/assets/463c7433-152a-4bce-b26e-8a77fcfb04b9" />
 
 ---
 
