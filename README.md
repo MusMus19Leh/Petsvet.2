@@ -15,7 +15,7 @@ O projeto consiste no desenvolvimento de um sistema para **gerenciamento de uma 
 
 A aplicação tem como objetivo facilitar o cadastro e o gerenciamento das informações de **clientes, animais e consultas**, permitindo que os dados sejam armazenados e consultados de forma organizada.
 
-O sistema possui funcionalidades de cadastro, consulta, alteração e exclusão de dados (CRUD), além de consultas utilizando recursos do banco de dados, como **JOINs, Views, Functions e Procedures**.
+O sistema possui funcionalidades de cadastro, consulta, alteração e exclusão de dados (CRUD), além de consultas utilizando recursos do banco de dados, como **JOINs, Views, Functions e Procedures, mais o uso de Supabase e Redis **.
 
 O projeto foi desenvolvido como atividade acadêmica, com o objetivo de aplicar na prática conceitos de **programação, banco de dados e integração entre aplicação e SGBD**.
 
@@ -27,6 +27,7 @@ O projeto foi desenvolvido como atividade acadêmica, com o objetivo de aplicar 
 * **Tkinter** — interface gráfica
 * **PostgreSQL** — banco de dados
 * **Supabase** — hospedagem e gerenciamento do banco de dados
+* **Redis — ecnologia utilizada como cache para armazenar temporariamente 
 * **GitHub** — versionamento e armazenamento do projeto
 
 ---
@@ -185,6 +186,18 @@ CALL sp_registrar_consulta(
 
 ---
 
+## 🦾Configurações das variáveis de ambiente 
+Cirar um arquivo chamado .env na pasta do projeto, mantendo as credenciais privadas:
+*Primeiro o banco de dados
+SUPABASE_URL=sua_url_do_supabase
+SUPABASE_KEY=sua_chave_do_supabase
+
+* Armazenamento do banco de dados 
+REDIS_HOST=seu_host_do_redis
+REDIS_PORT=sua_porta_do_redis
+REDIS_USERNAME=default
+REDIS_PASSWORD=sua_senha_do_redis
+
 ## 🐶 Funcionalidades
 
 O sistema permite realizar operações relacionadas ao gerenciamento da clínica veterinária, incluindo:
@@ -214,6 +227,8 @@ Este projeto foi desenvolvido com o objetivo de colocar em prática os conhecime
 * Views;
 * Functions;
 * Procedures;
+* Redis
+* Supabase
 * Operações CRUD;
 * Integração entre aplicação e banco de dados;
 * Organização e versionamento do projeto no GitHub.
@@ -233,6 +248,12 @@ Consultas
 
 ---
 
-## 👨‍💻 Projeto acadêmico
+## 🤓 O que significa tudo isso? 
+Procedure, View, Function forma de ter acesso a esses dados dentro da tabela de SQL.
+O Supabase é utilizado como banco de dados principal da aplicação. Ele permite armazenar os registros de maneira persistente e acessá-los pela internet e ele mantém os dados armazenados mesmo depois que a aplicação é encerrada. Dessa forma, as informações não dependem apenas da memória temporária do programa.
+Com o Redis foi escolhido para atuar como uma camada de cache, armazenando temporariamente dados que podem ser consultados repetidamente,pois ele é uma tecnologia rápida baseada principalmente no armazenamento de dados em memória, e adequada para esse tipo de utilização
+
+## 👨‍💻 Considerações Finais
 
 Projeto desenvolvido para fins acadêmicos.
+Máquinas utilizadas para esse trabalho:VsCode, Supabase e  Redis 
